@@ -1,0 +1,396 @@
+@media (max-width: 1660px){
+    header#header .box-header .btn {font-size: 37px;max-width: 375px;width: 375px;line-height: 110px;}
+    section.wrap-slide-main .wrap-position .img-slide {left:6%}
+    .wrap-slide-main .content-slide-header {bottom: -23%;}
+    .wrap-slide-main .content-slide-header .content-slide {width: 78%;}
+    .wrap-slide-main .content-slide-header .content-slide p {font-size: 70px;}
+    section#content-service .main-service .item-service p {width: 90%; margin-top: 35px;}
+    section#content-service .main-service .item-service h2 {font-size: 65px;}
+    section#content-service .border-service { margin-top: 6%; margin-bottom: 1%;}
+    .scroll {margin-top: 6%;}
+    section#list-service {padding-top: 90px;}
+    section#list-service .wrap-content-list-service { margin-top: 4%;}
+    .wrap-title h2 {font-size: 75px;}
+    /*  */
+    .background-gray header#header {padding:15px 0}
+}
+@media (max-width: 1366px){
+    header#header .logo img.logo-pc{width: 85%;}
+    .wrap-slide-main .content-slide-header .content-slide p {font-size: 60px;}
+    .wrap-slide-main .content-slide-header {bottom: -18%;}
+    .wrap-slide-main .content-slide-header .content-slide { padding: 80px 8% 80px 75px;}
+    section#content-service .main-service .item-service h2 {font-size: 58px;}
+    section#app .box-app {width: 90%;}
+    section#content-service .container {max-width: 90%;}
+    section#content-service .main-service .item-service p { width: 100%;}
+    section#list-service .wrap-content-list-service {display: inherit;}
+    .wrap-slide-main {min-height: 875px;}
+    section.wrap-slide-main .wrap-position .img-slide {left: 1%; }
+    header#header .logo {margin-left: 70px;}
+    header#header .box-header .btn {font-size: 32px;max-width: 315px;width: 315px;line-height: 100px;}
+    header#header .box-header .btn:last-child {margin-left: 10px;max-width: 315px; width: 315px;}
+    section#rental p {width:90%}
+    section.wrap-slide-main .wrap-position .img-slide img {max-width: 400px;}
+    .wrap-slide-main .content-slide-header .title-content {font-size: 45px; max-width: 500px;}
+    section#service .wrap-slide-service .item {width:auto;}
+    /*  */
+    .wrap-content-doxcument {font-size: 30px;}
+}
+@media (max-width: 1200px){
+    .wrap-slide-main .content-slide-header .content-slide p {font-size: 55px;}
+    .wrap-slide-main .content-slide-header .content-slide {padding: 80px 5% 80px 75px;}
+}
+@media (max-width: 1080px){
+.container{max-width:1080px!important; margin-left: 0;}
+/*  */
+/*  */
+header#header{margin-top: 30px;}
+header#header .logo{margin-left: 35px;}
+header#header .logo img:not(.logo-mobile){display: none;}
+header#header .logo img.logo-mobile{display: block;}
+header#header .box-header .btn{font-size: 30px; padding:21.5px 12px; max-width: 292px; width: 292px; line-height: inherit}
+header#header .box-header .btn:last-child{margin-left: 30px;}
+.wrap-slide-main{background: url(../images/background-header-mobile.png); min-height: 836px;}
+.wrap-title p{ margin-top: -35px;}
+.wrap-title .content-title{padding-top: 45px; line-height: 70px;}
+section.wrap-slide-main .wrap-position .img-slide{left: 100px; margin-bottom: 0;}
+section.wrap-slide-main .wrap-position .img-slide img:not(.image-phone-pc){display: block;}
+section.wrap-slide-main .wrap-position .img-slide img.image-phone-pc{display: none;}
+.wrap-slide-main .content-slide-header{bottom: -25%;}
+.wrap-slide-main .content-slide-header .title-content{font-size: 45px;  padding: 16.5px 47px 16.5px 73px;margin-bottom: -25px; width: auto;max-width: inherit;text-align: inherit;}
+.wrap-slide-main .content-slide-header .content-slide{ padding:100px 40px 82px 75px; text-align: right; width: 76%;}
+.wrap-slide-main .content-slide-header .content-slide p{ font-size:55px;}
+
+section#content-service{ padding-top: 240px; }
+section#content-service .border-service{height: 2px; background: #369DFF;}
+section#content-service .main-service .item-service{ font-size: 36px;}
+section#content-service .main-service .item-service h2{ font-size: 55px;}
+section#content-service .main-service .item-service p{ width: auto;margin: auto;margin-top: 0;text-align: inherit;}
+section#content-service .main-service .item-service:last-child p{text-align: inherit;}
+section#content-service .images-position .img-fade-top{width: 53%; top: 21%; left:-77px}
+section#content-service .images-position .img-fade-bottom{width: 44%; display: block}
+section#content-service .main-service .item-service:last-child p .font-bold{font-family: var(--font-bold);}
+/*  */
+.scroll{top: -60px; margin-top: 30px;}
+.scroll .scroll-txt{ font-size: 20px;}
+.scroll .scroll-animation{top: 40px; width: 3px;height: 73px;}
+.scroll .scroll-animation:after{width: 3px;border-left: 3px #8BB0CA solid;-webkit-animation: scroll 1.5s ease-in-out 0.4s infinite normal;animation: scroll 1.5s ease-in-out 0.4s infinite normal;margin: 0 auto 0;}
+
+/*  */
+section#list-service{padding-top: 0;}
+section#list-service .container{max-width: inherit}
+section#list-service .wrap-content-list-service{text-align: inherit; margin-top: 0; display: inherit;}
+section#list-service .wrap-list-service{display: flex;}
+section#list-service .wrap-list-service .item-list-service{ margin-top: 0;}
+.wrap-video{margin-top: 60px; margin-bottom: 0;}
+.wrap-animation{width: 100%}
+.wrap-animation .box-content-animation{margin: 0 45px; padding-bottom: 0}
+.wrap-video .wrap-video-animate{margin-top: 0;}
+
+/* wrap-price */
+section#wrap-price{padding-top: 20px;}
+section#wrap-price .content-price{ margin-top: 0}
+section#wrap-price .content-price .item-box-price p{font-size: 36px;}
+section#wrap-price .content-price .item-box-price .content-text-price{ width: 85%; margin: 0 auto; margin-top: 0;margin-bottom: 0;}
+section#wrap-price .content-price .item-box-price .content-text-price p{line-height: 65px}
+section#wrap-price .wrap-animation .box-content-animation p:not(.font-bold){line-height: 50px; padding:0 35px; text-align: left;}
+section#wrap-price .wrap-animation .box-content-animation p.font-bold.text-right{ margin-top: 20px; margin-bottom: 30px;}
+section#wrap-price .wrap-animation{padding-left:inherit; padding-right:inherit}
+section#wrap-price .wrap-animation .box-content-animation{ width: 100%;}
+/* rental */
+section#rental h3{margin-top: -30px;}
+section#rental p{font-size: 36px; padding:0 32px; width: 100%; line-height: 2}
+/* gym */
+section#gym{ padding-top: 45px;}
+section#gym .wrap-gym-animate{margin-bottom: 50px;}
+section#gym .wrap-slide-gym{width:100%; max-width: 800px;margin:0 auto}
+.content-slide-gym{margin:0 auto; margin-top: 40px; margin-bottom: 55px; width:80%;}
+section#gym .wrap-animation .box-content-animation .location-gym{padding-bottom: 20px;}
+section#gym .box-content-animation .wrap-ifame{width:754px;}
+
+/* app */
+section#app .box-app{width: 100%}
+section#app .box-app .carousel-indicators li.active {
+    font-size: 41px;}
+section#app .box-text-swipe .text-swipe:not(.click-pc){display: flex;}
+section#app .box-text-swipe .text-swipe.click-pc{display: none;}
+/* service */
+section#service{padding-top: 40px;}
+section#service .wrap-slide-service{width: 350px; margin:0 auto; }
+section#service .comment-slide{ padding:60px 0;}
+/*  */
+.wrap-content-doxcument {font-size: 28px;}
+main#main .wrap-box-table ul#wrap-table{font-size: 30px;}
+}
+@media (max-width: 1024px){
+    header#header .logo {margin-left: 25px;}
+    header#header .box-header .btn, header#header .box-header .btn:last-child {font-size: 20px;max-width: 220px;width: 220px;}
+    header#header .box-header .btn:last-child {margin-left: 15px;}
+    .wrap-slide-main .content-slide-header .content-slide {padding: 50px 40px 50px 60px;text-align: right;width: 80%;}
+    .wrap-slide-main .content-slide-header {bottom: -12%;}
+    .wrap-slide-main .content-slide-header .content-slide p {font-size: 48px;}
+    .wrap-slide-main .content-slide-header .title-content {font-size: 40px; padding: 12.5px 47px 14.5px 73px;}
+    section.wrap-slide-main .wrap-position .img-slide {left: 15px;}
+    section#content-service {padding-top: 180px;}
+    section#content-service .main-service .item-service h2 {font-size: 48px; margin-bottom: 15px;}
+    section#content-service .main-service .item-service p {line-height: 60px;}
+    section#content-service .main-service .item-service {font-size: 33px;}
+    section#content-service .border-service {margin-top: 4%;}
+    .wrap-slide-main {min-height: 770px;}
+    .wrap-title h2 {font-size: 65px;}
+    section#list-service .wrap-list-service .item-list-service {max-width: 290px;}
+    .wrap-list-service .item-list-service h3 {font-size: 35px;line-height: 70px;}
+    section#list-service .wrap-list-service .item-list-service {min-height: 345px;}
+    .wrap-list-service .item-list-service .img {min-height: 100px;}
+    .wrap-list-service .item-list-service .img img {height: 90px;}
+    .wrap-list-service .item-list-service span.content {font-size: 20px;}
+    .wrap-list-service .item-list-service a.show-tabs { margin-top: 10px;}
+    .show-popup {font-size: 28px;}
+    .wrap-animation h3 {font-size: 40px;}
+    section#wrap-price .content-price p,
+    section#wrap-price .content-price p.font-36,
+    section#wrap-price .content-price .item-box-price p,
+    section#wrap-price .wrap-animation .box-content-animation p.font-bold.text-right {font-size: 33px;}
+    section#wrap-price .content-price .item-box-price p>span.font-bold {font-size: 47px;line-height: 1;}
+    section#wrap-price .content-price .item-box-price p:first-child {padding-top: 0;}
+    section#wrap-price .content-price .item-box-price .content-text-price {width: 90%;}
+    section#wrap-price .wrap-animation .box-content-animation p.font-bold.text-right{padding-right: 15px;}
+    section#rental p {font-size: 33px;}
+    footer#footer .wrap-footer {padding: 75px 0 60px;}
+    footer#footer .wrap-footer ul li a {display: inline-block;}
+    /*  */
+    .wrap-content-doxcument h3 {margin-top: 50px;}
+    main#main .wrap-box-table ul#wrap-table{font-size: 28px;}
+}
+@media (max-width: 992px){
+    header#header{margin-top: 20px;}
+    header#header.active{padding:10px 0}
+    header#header .box-header .btn, header#header .box-header .btn:last-child {max-width: 215px;width: 215px;}
+    .wrap-slide-main {min-height: 700px; background-position: center;}
+    section.wrap-slide-main .wrap-position .img-slide img:not(.image-phone-pc) {width: 300px;}
+    header#header .logo img.logo-mobile{height: 60px;}
+    header#header .box-header .btn{padding-top:15px; padding-bottom: 15px;}
+    .wrap-slide-main .content-slide-header .title-content{font-size: 36px; padding: 10px 35px 12px 55px}
+    .wrap-slide-main .content-slide-header .content-slide p{font-size: 40px; line-height: 1;}
+    .wrap-slide-main .content-slide-header {bottom: -10%;}
+    section#content-service .main-service .item-service h2 {font-size: 42px;margin-bottom: 15px;}
+    section#content-service .main-service .item-service {font-size: 30px;}
+    section#content-service .main-service .item-service p {line-height: 50px;}
+    .wrap-title h2 {font-size: 60px;line-height: 120px;}
+    .wrap-title p {font-size: 30px;}
+    .wrap-title .content-title {padding-top: 20px;line-height: 60px;font-size: 30px;margin-bottom: 20px;}
+    section#list-service {padding-top: 20px;}
+    section#wrap-price .content-price p,
+    section#wrap-price .content-price p.font-36,
+    section#wrap-price .content-price .item-box-price p, 
+    section#wrap-price .wrap-animation .box-content-animation p.font-bold.text-right {font-size: 30px;}
+    section#wrap-price .content-price .item-box-price p>span.font-bold {font-size: 43px;line-height: 1;}
+    section#wrap-price .content-price .item-box-price .content-text-price {width: 100%;padding: 0 15px; margin-bottom: 20px;}
+    section#wrap-price .content-price .item-box-price .content-text-price p {line-height: 50px;}
+    section#rental h3 {font-size: 40px;line-height: 80px;margin-top: 0;}
+    section#rental p {font-size: 30px;padding: 0 15px; line-height: 1.4;}
+    .content-slide-gym {font-size: 30px;margin-top: 40px;margin-bottom: 30px;width: 90%;}
+    .wrap-video {margin-top: 40px;}
+    section#app .box-app .carousel-indicators li {font-size: 28px; color: #707070;}
+    section#app .box-app .carousel-indicators li.active {font-size: 30px; color: #000000;}
+    section#app {padding-bottom: 60px;padding-top: 55px;}
+    section#app .box-app .box-background { width: 370px; margin-right: 20px;}
+    section#app .box-app .carousel-inner {margin: 16px 21px;max-width: 325px;height: calc( 706px - 41px); border-radius: 30px;}
+    section#app .box-app .box-background .box-control-slide {top: 13px;left: 21px;right: 24px;bottom: 11px;border-radius: 29px;}
+    section#app .box-text-swipe {border-radius: 30px;}
+    section#app .box-text-swipe .text-detail-swipe {bottom: 15%;}
+    section#app .box-text-swipe .text-swipe {font-size: 30px;width: 160px;height: 160px;}
+    section#app .box-text-swipe .text-detail-swipe p {font-size: 26px;}
+    div.marquee > div.marquee-text img{height: 160px;}
+    section#service .wrap-text-slide-service a{font-size: 26px;margin-top: 30px; margin-bottom: 12px;}
+    section#service .wrap-text-slide-service p{font-size: 26px; line-height: 40px; white-space: nowrap;text-overflow: ellipsis; height: 40px;width: 100%; overflow: hidden;}
+    section#service .comment-slide {padding: 50px 0;}
+    footer#footer .wrap-footer {padding: 50px 0 45px;}
+    footer#footer .wrap-footer ul li a, footer#footer .wrap-footer p, footer#footer .wrap-footer p span {font-size: 25px;}
+    /*  */
+    .wrap-content-doxcument {font-size: 26px;}
+    main#main .wrap-box-table ul#wrap-table{font-size: 26px;}
+}
+@media (max-width: 768px){
+    header#header .logo {margin-left: 15px;}
+    header#header .logo img.logo-mobile {height: 50px;}
+    header#header .box-header .btn, header#header .box-header .btn:last-child {max-width: 190px;width: 190px;font-size: 18px;}
+    .wrap-slide-main {min-height: 580px;}
+    .wrap-slide-main .content-slide-header .title-content {font-size: 30px;padding: 14px 30px 14px 30px;line-height: 1;}
+    .wrap-slide-main .content-slide-header .content-slide p {font-size: 32px;}
+    .wrap-slide-main .content-slide-header {bottom: -7%;}
+    section#content-service {padding-top: 120px;}
+    section#content-service .main-service .item-service {padding: 35px 0; font-size: 26px;}
+    section#content-service .main-service .item-service h2 {font-size: 35px;}
+    .wrap-title h2 {font-size: 50px;line-height: 2;}
+    .wrap-title p {font-size: 25px;}
+    section#list-service .wrap-content-list-service {margin:0 10px}
+    section#list-service .wrap-list-service .item-list-service {margin: 15px 0;max-width: 100%;}
+    section#list-service .wrap-list-service {flex-direction: column;align-items: center;}
+    section#list-service .wrap-list-service {margin-top: 0;}
+    section#wrap-price .content-price p, 
+    section#wrap-price .content-price p.font-36, section#wrap-price .content-price .item-box-price p, 
+    section#wrap-price .wrap-animation .box-content-animation p.font-bold.text-right {font-size: 25px; line-height: 2.2;}
+    section#rental h3 {font-size: 35px;line-height: 2;}
+    section#rental p {font-size: 25px;}
+    section#gym p {font-size: 25px;}
+    .wrap-title .content-title {line-height: 2;font-size: 25px; padding:0 15px}
+    section#app .box-app {padding-top: 40px;}
+    section#app .box-app .carousel-indicators li span {width: 40px;height: 40px;margin-right: 5px;}
+    section#app .box-app .carousel-indicators li span:before {width: 30px; height: 30px;}
+    section#app .box-app .carousel-indicators li.active span:before {width: 40px;height: 40px;}
+    section#app .box-app .carousel-indicators li.active,section#app .box-app .carousel-indicators li {font-size: 100%;min-height: auto;}
+    section#app .box-app .carousel-indicators {width: 30%;}
+    section#app .box-app .box-background {width: 50%;margin-right: 20px;}
+    section#app .box-app .carousel-inner{width: auto;height: 92%;margin: 0;left: 6%;right: 6.6%;top: 6%;bottom: 6%; border-radius: 21px;}
+    section#app .box-text-swipe {border-radius: 50px; width: 98%;}
+    section#app .box-app .box-background .box-control-slide {top: 0;left: 0;right: 0;bottom: 0;}
+    section#app .box-text-swipe .text-swipe {font-size: 18px;width: 120px;height: 120px;}
+    section#app .box-text-swipe .text-detail-swipe p {font-size: 20px;}
+    section#app .box-app .box-background .box-control-slide a.carousel-control-prev {left: 10%;}
+    section#app .box-app .box-background .box-control-slide a.carousel-control-next {right: 10%;}
+    section#service .comment-slide {font-size: 20px;}
+    section#service .wrap-text-slide-service p {padding:0 10px}
+    footer#footer .wrap-footer ul li a, footer#footer .wrap-footer p, footer#footer .wrap-footer p span {font-size: 18px;}
+    footer#footer .wrap-footer {padding: 30px 0;}
+    .wrap-animation h3 {font-size: 32px;padding: 0 15px;}
+    section#wrap-price .wrap-animation .box-content-animation {padding:15px; width: auto; margin:0 15px}
+    .wrap-animation .box-content-animation .box-image-popup {margin-top: 20px;padding-bottom: 15px; display: block;}
+    section#wrap-price .content-price .item-box-price p>span.font-bold {font-size: 26px;}
+    section#gym .box-content-animation .wrap-ifame {width: 100%;}
+    .wrap-video {padding-left: 0; padding-right: 0; width:auto;}
+    .wrap-animation .box-content-animation {margin: 0;padding-top: 15px;} 
+    section#wrap-price .content-price .item-box-price .content-text-price p {line-height: 43px;}
+    section#service .wrap-slide-service #slde-2-service {margin-top: 60px;}
+    section#gym .wrap-slide-gym {width: 75%;max-width: 75%;}
+    footer#footer .wrap-footer ul {flex-direction: column;}
+    footer#footer .wrap-footer ul li{border:none!important}
+    section#wrap-price .content-price .icon-plus {font-size: 30px;}
+    section#wrap-price .content-price .item-box-price .content-text-price{margin-top: 10px;}
+    section#wrap-price .content-price .item-box-price .content-text-price p{margin-bottom: 0; line-height: 1;}
+    section#gym .wrap-gym-animate{padding: 15px;margin-left: 20px;margin-right: 20px;width: auto;}
+    /*  */
+    .wrap-content-doxcument {font-size: 22px;}
+    .wrap-content-doxcument h3 {margin-top: 40px;}
+    .wrap-content-doxcument h3 {font-size: 28px;}
+    main#main .wrap-box-table ul#wrap-table{font-size: 22px;}
+    main#main .wrap-box-table {padding: 0 0 30px}
+    main#main .wrap-box-table h1{font-size: 30px; line-height: 1.5;}
+}
+@media (max-width:660px) {
+    header#header .logo img.logo-mobile {height: 45px;}
+    header#header .box-header .btn, header#header .box-header .btn:last-child {max-width: max-content;width: auto;font-size: 15px;padding-left: 15px;padding-right: 15px;}
+    .wrap-slide-main {min-height: 450px;background-position: top;}
+    section.wrap-slide-main .wrap-position .img-slide {width: 35%;}
+    section.wrap-slide-main .wrap-position .img-slide img:not(.image-phone-pc) {width: 100%;}
+    .wrap-slide-main .content-slide-header .title-content {font-size: 20px;}
+    .wrap-slide-main .content-slide-header .content-slide p {font-size: 24px; margin-bottom: -5px;}
+    .wrap-slide-main .content-slide-header .content-slide br{height: 1px;}
+    .wrap-slide-main .content-slide-header {bottom: -3%;}
+    section#content-service .main-service .item-service h2 {font-size: 26px;}
+    section#content-service .main-service .item-service {font-size: 20px;}
+    section#content-service .main-service .item-service p {line-height: 34px;}
+    .wrap-title h2 {font-size: 45px;line-height: 2;}
+    .show-popup {font-size: 20px;margin-bottom: 37px;min-height: 40px;}
+    .wrap-title h2 {font-size: 38px;line-height: 2;}
+    .show-popup:after {height: 3px;}
+    section#list-service .wrap-content-list-service {margin-bottom: 30px;}
+    section#wrap-price .content-price p, section#wrap-price .content-price p.font-36, section#wrap-price .content-price .item-box-price p, section#wrap-price .wrap-animation .box-content-animation p.font-bold.text-right {font-size: 20px;line-height: 2;}
+    section#wrap-price .content-price p.font-36 {margin:0}
+    section#wrap-price .content-price .item-box-price {padding:15px }
+    section#wrap-price .content-price .item-box-price p>span.font-bold {font-size: 35px;}
+    section#wrap-price .content-price .box-show-detail .wrap-animation p>span.font-bold{font-size: 28px;}
+    section#rental p {font-size: 16px; margin-top: -15px;}
+    section#rental h3 {font-size: 26px; margin-bottom: 35px; line-height: 1.5   ;}
+    .wrap-title p {margin-top: -25px;}
+    .wrap-title .content-title {font-size: 20px;}
+    section#gym p {font-size: 18px;}
+    .wrap-animation h3 {font-size: 18px;}
+    section#app .box-app .carousel-indicators {width: 40%;}
+    .wrap-title p {font-size: 20px;}
+    section#service .wrap-text-slide-service a {font-size: 22px;}   
+    section#service .wrap-text-slide-service p {font-size: 20px;line-height: 1.5;height: 30px;} 
+    footer#footer .wrap-footer ul li a, footer#footer .wrap-footer p, footer#footer .wrap-footer p span {font-size: 15px!important;padding: 0 10px;}
+    footer#footer .wrap-footer p span#get-year{padding:0}
+    section#service .wrap-slide-service {width: 300px;}
+    section#service .wrap-slide-service .owl-carousel .item img {max-height: 200px;}
+    footer#footer .wrap-footer ul li {border-width: 1px}
+    section#gym .wrap-slide-gym .item img {height: 280px;}
+    .wrap-video {padding: 0; margin:0}
+    .wrap-animation .box-content-animation {margin: 0; border-width: 2px;}
+    .wrap-animation .box-content-animation iframe {width: 100%;height: 250px;}
+    section#wrap-price .content-price .icon-plus {font-size: 20px;}
+    section#rental {padding: 125px 0 55px;}
+}
+@media (max-width:576px){
+    header#header .box-header .btn, header#header .box-header .btn:last-child {font-size: 13px;}
+    header#header .box-header .btn:last-child {margin-left: 7px;}
+    header#header .box-header {margin:0}
+    header#header .logo {margin-left: 0;}
+    header#header .logo img.logo-mobile {height: 36px;}
+    p{font-size: 16px!important;}
+    h2{font-size: 24px!important;}
+    .wrap-list-service .item-list-service h3 {font-size: 30px;}
+    section#wrap-price .content-price .item-box-price p>span.font-bold {font-size: 30px;}
+    section#app .box-text-swipe .text-swipe {font-size: 16px;width: 80px;height: 80px;}
+    section#app .box-text-swipe .text-detail-swipe p {line-height: 2;}
+    section#app .box-app .box-background .box-control-slide a[class*=carousel-control-] span img{width: 30px;}
+    .wrap-title p {margin-top: -18px;}
+    section#wrap-price .content-price .item-box-price p:first-child {margin-bottom: 10px;}
+    section#wrap-price .wrap-animation .box-content-animation p:not(.font-bold) {line-height: 1.5;}
+    section#wrap-price .content-price .box-show-detail .wrap-animation p>span.font-bold {font-size: 22px;}
+    section#wrap-price .content-price {padding:0;padding-bottom: 30px;}
+    section#service .wrap-slide-service #slde-2-service {margin-top: 50PX;}
+    .wrap-slide-main .content-slide-header .title-content {font-size: 13px;}
+    section#app .box-app .carousel-indicators li span {width: 30px;height: 30px;}
+    section#app .box-app .carousel-indicators li span:before {width: 20px;height: 20px;}
+    section#app .box-app .carousel-indicators li.active span:before {width: 30px;height: 30px}
+    section#app .box-app .carousel-indicators{margin-left: 0;}
+    section#app .box-app .box-background {width: 50%;margin-right: 0;}
+    div.marquee{margin-top: 0;}
+    div.marquee > div.marquee-text img{height: 100px;}
+    section#service .wrap-title .content-title {margin-top: 40px}
+    section#wrap-price .wrap-animation .box-content-animation {padding-left: 0; padding-right: 0;}
+    section#wrap-price .wrap-animation .box-content-animation p:not(.font-bold) {padding:0}
+    .show-popup img {width: 16px;}
+    section#wrap-price .content-price .item-box-price .content-text-price {padding:0}
+    section#wrap-price .content-price .item-box-price .content-text-price p{display: contents;}
+    section#content-service .main-service {padding-top: 10px;}
+    section#list-service {padding-bottom: 10px;}
+    .box-content-animation .box-image-popup .item-box img{width:90%}
+    section.wrap-slide-main .wrap-position {bottom: -80px;}
+    .scroll .scroll-txt {font-size: 16px;}
+}
+@media (max-width:441px){
+    header#header .box-header .btn, header#header .box-header .btn:last-child {font-size: 11px;padding: 10px 5px;}
+    header#header .logo img.logo-mobile {height: 25px;}
+    .wrap-slide-main {min-height: 350px;background-position: center;}
+    section.wrap-slide-main .wrap-position .img-slide {left: 0;bottom: 30px;}
+    .wrap-slide-main .content-slide-header {bottom: 5%}
+    .wrap-slide-main .content-slide-header .content-slide {padding: 40px 30px;width: 85%;}
+    section#app .box-text-swipe {border-radius: 30px;}
+    section#app .box-app .carousel-indicators {width: 45%;}
+    section#app .box-app .carousel-indicators li.active, section#app .box-app .carousel-indicators li {font-size: 70%; background: transparent;}
+    footer#footer .wrap-footer ul li a, footer#footer .wrap-footer p, footer#footer .wrap-footer p span {font-size: 13px!important;padding: 0 7px;}
+    section#app .box-text-swipe .text-detail-swipe {bottom: 10%;}
+    section#app .box-text-swipe .text-detail-swipe p {font-size: 12px!important;}
+    section#service .wrap-slide-service {width: 100%;}
+    .wrap-slide-main .content-slide-header .content-slide {padding-right: 15px;}
+    section#app{padding-bottom: 30px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
