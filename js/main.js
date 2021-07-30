@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
     $(".show-popup").click(function(){
+        $(this).toggleClass("active");
         $(this).siblings(".hide-show-popup").slideToggle(400);
         $(this).children("img").toggleClass("active");
         $(this).children("span").toggleClass("active");
@@ -21,8 +22,7 @@ $(document).ready(function(){
                 return text === "詳細をみる" ? "詳細を閉じる" : "詳細をみる";
             })
         });
-        $(".show-map-gym").click(function () {
-             $(this).toggleClass("active");
+        $(".show-map-gym").click(function(){
             $(this).children(".animation-text-map").text(function(i, text){
                 return text === "MAPを見る" ? "MAPを閉じる" : "MAPを見る";
             })
@@ -120,26 +120,40 @@ $(document).ready(function(){
         }
     });
     // 
-    $('a.show-tabs').on('click', function (e) {
-        var href = $(this).attr('href');
+    $('.item-list-service').on('click', function (e) {
+        var href = $(this).children("a.show-tabs").attr('href');
         $('html, body').animate({
             scrollTop: $(href).offset().top - 70
         }, 'slow');
         e.preventDefault();
     });
     // 
-    $(".carousel").swipe({
+    function swipMobile(){
+        let widthOffset = $(document).width();
+        console.log(widthOffset);
+        if(widthOffset <= 1080){
+            $(".carousel").swipe({
 
-        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-      
-          if (direction == 'left') $(this).carousel('next');
-          if (direction == 'right') $(this).carousel('prev');
-      
-        },
-        allowPageScroll:"vertical"
-      
-    });
-    $(".box-background").click(() => $(".carousel").carousel("next"));
+                swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+            
+                if (direction == 'left') $(this).carousel('next');
+                if (direction == 'right') $(this).carousel('prev');
+            
+                },
+                allowPageScroll:"vertical"
+            
+            });
+        } else{
+            $(".box-background").click(() => $(".carousel").carousel("next"));
+        }
+    }
+    // 
+    $(".box-background").click(function(){
+        $("section#app .box-app .carousel-indicators li").removeClass("show-small");
+        $("section#app .box-app .carousel-indicators li.active").addClass("show-small");
+        $("section#app .box-app .carousel-indicators li.active").removeClass("active").nextAll().eq(1).toggleClass("show-small");
+        $("section#app .box-app .carousel-indicators li.active").removeClass("active").prevAll().eq(0).toggleClass("show-small");
+    })
     // 
     let d = new Date();
     document.getElementById("get-year").innerHTML = d.getFullYear();
@@ -149,8 +163,30 @@ $(document).ready(function(){
         console.log(heightHeader);
         $(".background-gray main#main").css({"margin-top":heightHeader + 30 + "px"});
     }
-    setHeightHeader()
+    function setHeigthSlider(){
+        let heights = $("section#service .owl-carousel .owl-stage").outerHeight();
+        $("section#service .owl-carousel.owl-drag .owl-item").css("height", heights + "px");
+    }
+    setHeigthSlider();
+    setHeightHeader();
+    swipMobile();
     $(window).resize(function () {
-        setHeightHeader()
+        setHeightHeader();
+        swipMobile();
+        setHeigthSlider();
     });
+    // 
+    // let prevScrollpos = window.pageYOffset;
+    // $(window).scroll(function() {
+    // let heightHeader = $("header#header").outerHeight();
+    // let currentScrollPos = window.pageYOffset;
+    //     if (prevScrollpos > currentScrollPos) {
+    //         document.getElementById("header").style.top = "0";
+    //     } else {
+    //         document.getElementById("header").style.top = "-" + heightHeader + "px";
+    //     }
+    //     prevScrollpos = currentScrollPos;
+    // })
+
+    // 
 });
