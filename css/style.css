@@ -56,7 +56,7 @@ body .color-black{color: #000000!important}
 /* style main */
  .container{max-width: 1620px;}
 /* header */
-header#header{position: fixed; width: 100%; margin-top: 10px; z-index: 10; transition: all .4s; margin-top: 35px;}
+header#header{position: fixed;top: 0; left: 0; width: 100%; margin-top: 10px; z-index: 20; transition: all .4s; margin-top: 35px;}
 header#header.active{background: rgba(255, 255, 255, 0.7); margin-top: 0; padding: 15px 0;}
 header#header .container{display: flex; justify-content: space-between; align-items: center;}
 .wrap-title{ text-align: center; padding-top: 25px;}
@@ -88,7 +88,7 @@ section#list-service .wrap-list-service .item-list-service:hover{box-shadow: 0px
 .show-popup{display: inline-block; position: relative;}
 .show-popup span{transition: all .4s;}
 .show-popup img{margin-right: 10px;transition: all .4s;transform: rotate(0deg);}
-.show-popup img.active{transform: rotate(180deg); transition: all .4s;}
+.show-popup img.active{transform: rotate(180deg); transition: all .4s; animation: none;}
 .show-popup span{ color: var(--color-main); position: relative; cursor: pointer;}
 .show-popup:after{content: ""; position: absolute; left: -6px;width: 108%;height: 5px;background: var(--color-main);bottom: -8px;}
 section#wrap-price .content-price .item-box-price{border-radius: 15px;}
@@ -151,9 +151,12 @@ section#list-service .wrap-list-service{display: contents;}
 section#list-service .wrap-list-service .item-list-service{background: var(--background-color-main); max-width: 300px; display: inline-block; margin-top: 30px; cursor: pointer;}
 .wrap-list-service .item-list-service h3{ font-size: 38px; line-height: 76px; margin-top: 17px;color:#000000;}
 .wrap-list-service .item-list-service span.content{font-size: 22px; line-height: 30px;}
-.show-popup{font-size: 30px;  display: inline-block; margin-bottom: 43px; min-height: 58px;}
-.show-popup span{display: inline-block;-webkit-animation: hover 1s ease-in-out 0.4s infinite normal;animation: hover 1s ease-in-out 0.4s infinite normal; animation-duration: 1.2s}
-.show-popup span.active{-webkit-animation:none; animation:none}
+.show-popup{font-size: 30px;  display: inline-block; margin-bottom: 43px; min-height: 58px; }
+section#list-service .show-popup{width: 248px; padding-left: 3px; text-align: left;}
+section#list-service .show-popup.active{width: 125px;}
+.show-popup span{position: absolute;display: inline-block;-webkit-animation: hover 1s ease-in-out 0.4s infinite normal;animation: hover 1s ease-in-out 0.4s infinite normal; animation-duration: 1.2s}
+.show-popup>img{-webkit-animation: hover 1s ease-in-out 0.4s infinite normal;animation: hover 1s ease-in-out 0.4s infinite normal; animation-duration: 1.2s}
+.show-popup span.active, section#list-service .show-popup.active img{-webkit-animation:none; animation:none}
 .wrap-video{padding:0 35px; margin-top: 75px; margin-bottom: 30px;}
 .wrap-animation{ border-radius: 15px; background: var(--background-color-main); padding:21px; width: 70%;margin: 0 auto;}
 .wrap-animation h3{ font-size: 45px; color:#FFFFFF}
@@ -190,6 +193,12 @@ section#wrap-price .wrap-animation .box-content-animation p.font-bold.text-right
 .box-show-detail .wrap-animation{border-top-left-radius: 0; border-top-right-radius: 0;}
 section#wrap-price .wrap-animation{width:100%; padding-left:0; padding-right:0}
 section#wrap-price .wrap-animation .box-content-animation{margin:0; width: 72%; margin:0 auto}
+section#wrap-price .show-popup{width: 184px;text-align: left; margin:0 auto; }
+section#wrap-price .show-popup img{margin-top: 4px;}
+section#wrap-price .show-popup.active{width: 213px;}
+section#wrap-price .show-popup:after{background: none;}
+section#wrap-price .content-price .item-box-price.box-show-price .box-show-detail {border-bottom: 5px solid var(--color-main);}
+section#wrap-price .content-price .item-box-price.box-show-price.active .box-show-detail {border-bottom: none;}
 /* rental */
 section#rental{padding: 180px 0 105px;}
 section#rental .wrap-title{position: absolute;left: 0;width: 100%;top: 90px; padding-top: 0;}
@@ -212,12 +221,14 @@ section#gym .wrap-animation .box-content-animation .location-gym p{color:#000000
 section#gym .box-content-animation .wrap-ifame{width:100%; margin: 0 auto; margin-top: 20px;}
 section#gym .show-map-gym.active{margin-bottom: 5px;}
 section#gym .show-map-gym.active:after{display: none}
-
+section#gym .show-popup{width: 193px; text-align: left; padding-left: 3px;}
+section#gym .show-popup.active{width: 220px;}
+section#gym .show-popup.active img{animation: none;}
 /* app */
 section#app{padding-bottom: 75px; padding-top: 80px;}
 section#app .box-app{padding-top: 80px; width: 80%; margin:0 auto}
 section#app .box-app .carousel{display: flex; justify-content: space-between; align-items: center;}
-section#app .box-app .box-background{ position: relative; width: 505px; margin-right: 50px;}
+section#app .box-app .box-background{ position: relative; width: 505px; margin-right: 50px; z-index: 15;}
 section#app .box-app .carousel-inner {position: absolute;z-index: 2;margin: 20px 30px; max-width: 439px; width:100%; height: calc( 964px - 41px); overflow: hidden; border-radius: 35px; top: 41px;}
 section#app .box-app .carousel-inner .carousel-item{cursor: grab;}
 section#app .box-app .box-background #background-slide{position: relative;z-index: 1;}
@@ -228,7 +239,7 @@ section#app .box-app .carousel-indicators li span:before{content:"";position: ab
 section#app .box-app .carousel-indicators li.active{ font-size: 42px; transition: all .4s; margin-left: 25px;}
 section#app .box-app .carousel-indicators li.active span:before{width:60px; height: 60px; left: 0; top: 0;}
 
-section#app .box-app .carousel-indicators li.show-small{margin-left: 10px;}
+section#app .box-app .carousel-indicators li.show-small{margin-left: 10px!important;}
 section#app .box-app .carousel-indicators li.show-small span:before {width: 50px; height: 50px;}
 
 div.marquee {white-space:no-wrap;overflow:hidden; margin-top: -90px;}

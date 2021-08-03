@@ -101,9 +101,9 @@ section#wrap-price .content-price{ margin-top: 0}
 section#wrap-price .content-price .item-box-price p{font-size: 36px;}
 section#wrap-price .content-price .item-box-price .content-text-price{ width: 85%; margin: 0 auto; margin-top: 0;margin-bottom: 0;}
 section#wrap-price .content-price .item-box-price .content-text-price p{line-height: 65px}
-section#wrap-price .wrap-animation .box-content-animation p:not(.font-bold){line-height: 50px; padding:0 35px; text-align: left;}
-section#wrap-price .wrap-animation .box-content-animation p.font-bold.text-right{ margin-top: 20px; margin-bottom: 30px;}
-section#wrap-price .wrap-animation{padding-left:inherit; padding-right:inherit}
+section#wrap-price .wrap-animation .box-content-animation p:not(.font-bold){line-height: 50px; padding:0 35px; text-align: left; font-size: 36px; width: 100%; padding:0 5px}
+section#wrap-price .wrap-animation .box-content-animation p.font-bold.text-right{ margin-top: 20px; margin-bottom: 30px; font-size: 30px;}
+section#wrap-price .wrap-animation{padding-left:35px; padding-right:35px}
 section#wrap-price .wrap-animation .box-content-animation{ width: 100%;}
 /* rental */
 section#rental h3{margin-top: -30px;}
@@ -132,6 +132,12 @@ section#service .comment-slide{ padding:60px 0;}
 main#main .wrap-box-table ul#wrap-table{font-size: 30px;}
 section#app .box-app .carousel-indicators li {padding:15px 0}
 .box-content-animation .box-image-popup .item-box {margin-bottom: 15px;}
+section#app .box-app .carousel-indicators li.show-small {
+    margin-left: 0!important;
+}
+section#wrap-price .content-price .item-box-price.box-show-price .box-show-detail {
+    border-bottom: 3px solid var(--color-main);
+}
 }
 @media (max-width: 1024px){
     header#header .logo {margin-left: 25px;}
@@ -167,13 +173,19 @@ section#app .box-app .carousel-indicators li {padding:15px 0}
     section#wrap-price .content-price .item-box-price p:first-child {padding-top: 0;}
     section#wrap-price .content-price .item-box-price .content-text-price {width: 90%;}
     section#wrap-price .wrap-animation .box-content-animation p.font-bold.text-right{padding-right: 15px;}
+    section#wrap-price .wrap-animation .box-content-animation p.font-bold.text-right{font-size: 24px;}
     section#rental p {font-size: 33px;}
     footer#footer .wrap-footer {padding: 75px 0 60px;}
-    footer#footer .wrap-footer ul li a {display: inline-block;}
+    footer#footer .wrap-footer ul li a {display: inline-block; font-size: 25px;}
+    footer#footer .wrap-footer p, footer#footer .wrap-footer p span {font-size: 18px;}
     /*  */
     .wrap-content-doxcument h3 {margin-top: 50px;}
     main#main .wrap-box-table ul#wrap-table{font-size: 28px;}
     .wrap-content-doxcument ul ul{padding-left:30px}
+    section#list-service .show-popup {width: 232px;}
+    section#gym .show-popup { width: 179px;}
+    section#wrap-price .show-popup {width: 175px;}
+    section#wrap-price .content-price .item-box-price p>span.font-bold {font-size: 36px;}
 }
 @media (max-width: 992px){
     header#header{margin-top: 20px;}
@@ -287,12 +299,13 @@ section#app .box-app .carousel-indicators li {padding:15px 0}
     section#app .box-app .box-background .box-control-slide a.carousel-control-next {right: 10%;}
     section#service .comment-slide {font-size: 20px;}
     section#service .wrap-text-slide-service p {padding:0 10px}
-    footer#footer .wrap-footer ul li a, footer#footer .wrap-footer p, footer#footer .wrap-footer p span {font-size: 18px;}
+    footer#footer .wrap-footer ul li a{font-size: 18px;}
+    footer#footer .wrap-footer p, footer#footer .wrap-footer p span {font-size: 16px;}
     footer#footer .wrap-footer {padding: 30px 0;}
     .wrap-animation h3 {font-size: 32px;padding: 0 15px;}
-    section#wrap-price .wrap-animation .box-content-animation {padding:15px; width: auto; margin:0 15px}
+    section#wrap-price .wrap-animation .box-content-animation {width: auto;}
     .wrap-animation .box-content-animation .box-image-popup {margin-top: 20px;padding-bottom: 15px;}
-    section#wrap-price .content-price .item-box-price p>span.font-bold {font-size: 26px;}
+    section#wrap-price .content-price .item-box-price p>span.font-bold {font-size: 38px;}
     section#gym .box-content-animation .wrap-ifame {width: 100%;}
     .wrap-video {padding-left: 0; padding-right: 0; width:auto;}
     .wrap-animation .box-content-animation {margin: 0;padding-top: 15px;} 
@@ -316,8 +329,8 @@ section#app .box-app .carousel-indicators li {padding:15px 0}
     .wrap-content-doxcument ul ul{padding-left:10px}
     section#content-service .images-position .img-fade-top {width: 76%;top: 6%;left: -101px;}
     section#rental h3>span, .wrap-title .content-title span{display: block; line-height: 1;}
-    section#app .box-app .carousel-indicators li.show-small {margin-left: 0;}
-    section#app .box-app .carousel-indicators li.active {margin-left: 0;}
+    /* section#app .box-app .carousel-indicators li.show-small {margin-left: 0;} */
+    /* section#app .box-app .carousel-indicators li.active {margin-left: 0;} */
     section#wrap-price .box-content-animation .box-image-popup .item-box p {font-size: 16px!important; line-height: 1.3;}
     .box-content-animation .box-image-popup .item-box img{width: 90%;}
     section#content-service .images-position .img-fade-bottom { width: 56%;}
@@ -325,6 +338,7 @@ section#app .box-app .carousel-indicators li {padding:15px 0}
     section#content-service {padding-bottom: 0;}
     section#content-service .container {padding-bottom: 70px;}
     .scroll {top: -50px;}
+    section#wrap-price .wrap-animation .box-content-animation p:not(.font-bold) {font-size: 30px;}
 }
 @media (max-width:660px) {
     header#header .logo img.logo-mobile {height: 45px;}
@@ -346,7 +360,8 @@ section#app .box-app .carousel-indicators li {padding:15px 0}
     section#list-service .wrap-content-list-service {margin-bottom: 30px;}
     section#wrap-price .content-price p, section#wrap-price .content-price p.font-36, section#wrap-price .content-price .item-box-price p, section#wrap-price .wrap-animation .box-content-animation p.font-bold.text-right {font-size: 20px;line-height: 2;}
     section#wrap-price .content-price p.font-36 {margin:0}
-    section#wrap-price .content-price .item-box-price {padding:15px }
+    section#wrap-price .content-price .item-box-price p, section#wrap-price .content-price .item-box-price .content-text-price{padding:0 15px }
+    section#wrap-price .content-price .item-box-price .content-text-price p{padding:0}
     section#wrap-price .content-price .item-box-price p>span.font-bold {font-size: 35px;}
     section#wrap-price .content-price .box-show-detail .wrap-animation p>span.font-bold{font-size: 28px;}
     section#rental p {font-size: 16px; margin-top: -15px;}
@@ -377,6 +392,12 @@ section#app .box-app .carousel-indicators li {padding:15px 0}
     section#service .wrap-slide-service .owl-carousel.owl-drag .owl-item, section#service .wrap-slide-service .owl-carousel.owl-drag .owl-item .item {
         height: 350px!important;
     }
+    section#list-service .show-popup {width: 175px;}
+    section#list-service .show-popup.active {width: 97px;}
+    section#wrap-price .show-popup {width: 135px;}
+    section#wrap-price .show-popup.active {width: 155px;}
+    section#gym .show-popup {width: 142px;}
+    section#gym .show-popup.active {width: 160px;}
 }
 @media (max-width:576px){
     header#header .box-header .btn, header#header .box-header .btn:last-child {font-size: 13px;}
@@ -414,8 +435,8 @@ section#app .box-app .carousel-indicators li {padding:15px 0}
     section#wrap-price .wrap-animation .box-content-animation {padding-left: 0; padding-right: 0;}
     section#wrap-price .wrap-animation .box-content-animation p:not(.font-bold) {padding:0}
     .show-popup img {width: 16px;}
-    section#wrap-price .content-price .item-box-price .content-text-price {padding:0}
     section#wrap-price .content-price .item-box-price .content-text-price p{display: contents;}
+    section#wrap-price .content-price .item-box-price .content-text-price p:last-child{display: inline;margin-left: -3px;}
     section#content-service .main-service {padding-top: 10px;}
     section#list-service {padding-bottom: 10px; margin-bottom: 0%;}
     .box-content-animation .box-image-popup .item-box img{width:90%}
@@ -429,6 +450,7 @@ section#app .box-app .carousel-indicators li {padding:15px 0}
     section#content-service .images-position .img-fade-top {top: -2%;left: -59px;}
     section#content-service .container {bottom: -15px; padding-bottom: 40px;}
     .scroll .scroll-animation {height: 60px;}
+    section#service .wrap-text-slide-service p {height: 25px;}
 }
 @media (max-width:441px){
     header#header .box-header .btn, header#header .box-header .btn:last-child {font-size: 11px;padding: 10px 5px;}
@@ -439,11 +461,14 @@ section#app .box-app .carousel-indicators li {padding:15px 0}
     .wrap-slide-main .content-slide-header .content-slide {padding: 40px 30px;width: 78%;}
     section#app .box-text-swipe {border-radius: 30px;}
     section#app .box-app .carousel-indicators {width: 45%;}
-    section#app .box-app .carousel-indicators li.active, section#app .box-app .carousel-indicators li {font-size: 65%; background: transparent;}
+    section#app .box-app .carousel-indicators li.active, section#app .box-app .carousel-indicators li {font-size: 65%; background: transparent; border: 0; margin:0!important; min-height: 35px;}
     footer#footer .wrap-footer ul li a, footer#footer .wrap-footer p, footer#footer .wrap-footer p span {font-size: 13px!important;padding: 0 7px;}
-    section#app .box-text-swipe .text-detail-swipe {bottom: 10%;}
-    section#app .box-text-swipe .text-detail-swipe p {font-size: 12px!important;}
-    section#service .wrap-slide-service {width: 70%;}
+    section#app .box-text-swipe .text-detail-swipe {bottom: 18%;}
+    section#app .box-text-swipe .text-detail-swipe p {font-size: 12px!important; line-height: 1.6;}
+    section#gym .wrap-slide-gym {width: 60%; max-width: 60%;}
+    section#gym .wrap-slide-gym .item img {height: 220px;}
+    .owl-carousel.owl-drag .owl-item .item{margin-left: -5px; margin-right: -5px;}
+    section#service .wrap-slide-service {width: 40%;}
     .wrap-slide-main .content-slide-header .content-slide {padding-right: 15px;}
     section#app{padding-bottom: 30px;}
     section#content-service {padding-top: 120px;}
@@ -452,10 +477,14 @@ section#app .box-app .carousel-indicators li {padding:15px 0}
     section#content-service .main-service .item-service p, section#rental p ,section#gym p, .wrap-title .content-title p,
     section#wrap-price .content-price .box-show-detail .wrap-animation p>span.font-bold ,
     section#wrap-price .wrap-animation .box-content-animation p:not(.font-bold),
-    section#wrap-price .content-price .item-box-price .content-text-price p {font-size: 12px!important; line-height: 1.3;}
+    section#wrap-price .content-price .item-box-price .content-text-price p {font-size: 12px!important; line-height: 2;}
     .wrap-title .content-title p{margin:0}
-    section#service .wrap-text-slide-service a.btn-yeylow {min-width: 190px;}
-    section#service .wrap-slide-service .item {margin-left: -20px;margin-right: -20px;}
+    section#service .comment-slide {font-size: 11px!important;}
+    section#service .wrap-text-slide-service a.btn-yeylow {min-width: 100%;}
+    section#service .wrap-slide-service .item {margin-left: -20px;margin-right: -20px}
+    section#service .wrap-slide-service .owl-carousel.owl-drag .owl-item, section#service .wrap-slide-service .owl-carousel.owl-drag .owl-item .item {height: 295px!important;}
+    section#service .wrap-slide-service .owl-carousel .item img {height: 160px;}
+    section#service .wrap-text-slide-service a {font-size: 18px; height: auto;line-height: 1;padding-top: 7px;padding-bottom: 10px; min-width: 80%}
     section#service .wrap-text-slide-service {padding-bottom: 5px;}
     section#list-service .wrap-list-service { margin-top: 10px; }
     section#list-service .wrap-content-list-service { margin: 20px -10px;}
@@ -467,6 +496,8 @@ section#app .box-app .carousel-indicators li {padding:15px 0}
     .wrap-animation h3 {font-size: 16px;}
     .wrap-animation.wrap-price-animate {padding: 20px 0;}
     .wrap-list-service .item-list-service span.content br{content: "";margin-bottom: -8px;margin-top: -5px;line-height: 1;display: block;}
+    section#app .box-app .carousel-indicators li.active{margin-left:15px!important} 
+    section#app .box-app .carousel-indicators li.show-small{margin-left:10px!important} 
 }
 @media (max-width:375px){
     header#header .logo {margin-left: 10px;}
@@ -483,6 +514,14 @@ section#app .box-app .carousel-indicators li {padding:15px 0}
     section#rental {padding-top: 100px;}
     section#rental .wrap-title {top: 70px;}
     div.marquee > div.marquee-text img{height: 80px;}
+    section#list-service .show-popup {width: 159px;}
+    section#list-service .show-popup.active {width: 85px;}
+    section#wrap-price .show-popup {width: 120px;}
+    section#wrap-price .show-popup.active {width: 138px;}
+    section#gym .show-popup {width: 125px;}
+    section#gym .show-popup.active {width: 140px;}
+    section#app .box-text-swipe .text-swipe {font-size: 14px;width: 60px;height: 60px;}
+    section#app .box-text-swipe .text-detail-swipe p { font-size: 11px!important;}
 }
 @media (max-width:320px){
     header#header .logo {margin-left: 0;}
@@ -500,6 +539,7 @@ section#app .box-app .carousel-indicators li {padding:15px 0}
     section#content-service .main-service {padding-left: 10px; padding-right: 10px;}
     section#content-service .container {padding-bottom: 20px;}
     .scroll {top: -36px;}
+    section#service .wrap-text-slide-service a.btn-yeylow {min-width: 90%;}
 }
 
 
