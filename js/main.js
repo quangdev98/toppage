@@ -108,10 +108,9 @@ $(document).ready(function(){
         mar.data('interval',setInterval(mar.marquee,1000/50));
     });
     // 
-    $(".box-background").hover(function(){
-        $('section#app .owl-theme .owl-nav').toggleClass("active");
-        $("section#app .box-text-swipe").toggleClass("active");
-    });
+    $(".box-control-slide").click(function(){
+        $(this).css("display","none");
+    })
     $(window).on('scroll',function(){
         if($(window).scrollTop()){
             $('header#header').addClass('active');
@@ -132,72 +131,17 @@ $(document).ready(function(){
         let widthOffset = $(document).width();
         console.log(widthOffset);
         if(widthOffset <= 1080){
-            $(".carousel").swipe({
-
+            $(".box-text-swipe").swipe({
                 swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-            
-                if (direction == 'left') $(this).carousel('next');
-                if (direction == 'right') $(this).carousel('prev');
-            
+                    $(".box-control-slide").css("display","none");
                 },
                 allowPageScroll:"vertical"
-            
             });
         } else{
             $(".box-background").click(() => $(".carousel").carousel("next"));
         }
     }
-    // pc
     // 
-    let widthOffset = $(document).width();
-    if(widthOffset <= 1080){
-        $("section#app .box-app .carousel-indicators li.active").nextAll().eq(0).toggleClass("show-small");
-        $(".box-background").swipe({
-            swipe: function(event, direction, distance, duration, fingerCount, fingerData) {  
-                event.preventDefault();
-
-                $.ajax(this.href, {
-                    success: function() {
-                        let list = $("section#app .box-app .carousel-indicators li");
-                        let position = 0;
-                        for(let i =0; i < list.length; i++){
-                            if($(list[i]).hasClass('active')){
-                                position = i;
-                                break;
-                            }
-                        }
-                        let back = position - 1;
-                        let next = position + 1;
-                        console.log( 'back: ' +back);
-                        console.log('index:' + position);
-                        console.log('next: ' + next);
-                        $("section#app .box-app .carousel-indicators li.active").removeClass("show-small");
-                        $("section#app .box-app .carousel-indicators li").removeClass('show-small');
-                        if(back == -1) $(list).removeClass('show-small');
-                        if(back >= 0 && next <= list.length){
-                            $(list[back]).addClass('show-small');
-                            $(list[next]).addClass('show-small'); 
-                        }
-                         
-                    },
-                    error: function() {
-                       console.log("error");
-                    }
-                 });
-
-                
-            },
-            allowPageScroll:"vertical"
-        
-        });
-    } else{
-        $(".box-background").click(function(){
-            $("section#app .box-app .carousel-indicators li").removeClass("show-small");
-            $("section#app .box-app .carousel-indicators li.active").addClass("show-small");
-            $("section#app .box-app .carousel-indicators li.active").removeClass("active").nextAll().eq(1).toggleClass("show-small");
-            $("section#app .box-app .carousel-indicators li.active").removeClass("active").prevAll().eq(0).toggleClass("show-small");
-        })
-    }
     // 
     let d = new Date();
     document.getElementById("get-year").innerHTML = d.getFullYear();
