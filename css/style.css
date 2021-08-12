@@ -267,7 +267,7 @@ section#service .wrap-slide-service .owl-carousel .item img{width: 100%; object-
 section#service .owl-carousel .owl-stage-outer {overflow: inherit;}
 section#service .container{overflow: hidden;}
 section#service .wrap-text-slide-service{padding:0 15px 20px;}
-/* section#service .wrap-text-slide-service a{display: inline-flex; border-radius: 8px; color:#FFFFFF; justify-content: center; font-family: var(--font-bold); font-size: 30px; min-width: 137px; margin-top: 40px; margin-bottom: 15px; padding-top: 4px;padding-bottom: 11px;line-height: 1;} */
+section#service .wrap-text-slide-service a{display: inline-flex; border-radius: 8px; color:#FFFFFF; justify-content: center; font-family: var(--font-bold); font-size: 30px; min-width: 137px; margin-top: 40px; margin-bottom: 15px; padding-top: 4px;padding-bottom: 11px;line-height: 1;}
 section#service .wrap-text-slide-service a.btn-green{background: var(--color-main);}
 section#service .wrap-text-slide-service p{margin:0; font-size: 30px; line-height: 45px; overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
 section#service .wrap-text-slide-service a.btn-yeylow{background: #C5B9A1; min-width: 220px;}
