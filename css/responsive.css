@@ -517,7 +517,7 @@ section#app .box-text-swipe .text-swipe::after{background-image: url('../images/
     section#service .wrap-slide-service .item {margin-left: -20px;margin-right: -20px}
     section#service .wrap-slide-service .owl-carousel.owl-drag .owl-item, section#service .wrap-slide-service .owl-carousel.owl-drag .owl-item .item {height: 290px!important;}
     section#service .wrap-slide-service .owl-carousel .item img {height: 160px;}
-    section#service .wrap-text-slide-service a {font-size: 18px; height: auto;line-height: 1;padding-top: 6px;padding-bottom: 10px; min-width: 80%}
+    section#service .wrap-text-slide-service a {font-size: 18px; height: auto;line-height: 1;padding-top: 6px;padding-bottom: 7px; min-width: 80%}
     section#service .wrap-text-slide-service {padding-bottom: 5px;}
     section#list-service .wrap-list-service { margin-top: 10px; }
     section#list-service .wrap-content-list-service { margin: 20px -10px;}
