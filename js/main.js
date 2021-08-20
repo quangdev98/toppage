@@ -35,7 +35,7 @@ $(document).ready(function(){
         loop:true,
         autoplay:false,
         autoplayTimeout:5000,
-        margin:30,
+        margin:21,
         nav:true,
         responsive:{
             0:{
@@ -62,12 +62,10 @@ $(document).ready(function(){
     });
     $('#slide-service').owlCarousel({
         center: true,
-        items:2,
         loop:true,
         autoplay:false,
         autoplayTimeout:5000,
-        margin:60,
-        nav:true,
+        margin:47,
         responsive:{
             0:{
                 items:1
@@ -80,12 +78,10 @@ $(document).ready(function(){
     // slde-2-service
     $('#slde-2-service').owlCarousel({
         center: true,
-        items:2,
         loop:true,
         autoplay:false,
         autoplayTimeout:5000,
-        margin:60,
-        nav:true,
+        margin:47,
         responsive:{
             0:{
                 items:1
