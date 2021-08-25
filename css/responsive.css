@@ -79,6 +79,7 @@
      footer#footer .list-menu-footer {padding-left: 25px; padding-right: 25px;}
      footer#footer .list-menu-footer ul li a {width: 100%;}
      footer#footer .list-menu-footer .row>.col-md-4:nth-child(2) {padding:0 25px;}
+     main#main section#form-search-header {padding-top: 140px;}
 }
 
 @media (max-width: 768px){
@@ -102,7 +103,7 @@
     .box-menu>.container>.row>.col-md-4{flex: 0 0 50%; max-width: 50%; margin-bottom: 20px; padding-left: 10px; padding-right: 10px;}
     .box-menu>.container{padding-left:20px; padding-right: 20px;}
     .box-menu.wrap-flex>.container{padding-left: 15px; padding-right: 15px;}
-    .box-menu .item-menu .img-menu {height: 240px;}
+    .box-menu .item-menu .img-menu {height: 220px;}
     .box-menu .item-menu h4 {font-size: 18px; min-height: 40px;}   
     .box-menu .item-menu .content-menu p {font-size: 17px; line-height: 2;} 
     .box-menu .button-blue .btn {margin-right: auto; margin-top: 10px; margin-bottom: 0;}
@@ -153,6 +154,7 @@
     header#header .logo a>img{height: 30px;}
     header#header {padding: 15px 0;}
     .box-menu .item-menu .img-menu {height: 160px;}
+    .box-menu .item-menu {padding-bottom: 10px;}
 }
 @media (max-width: 414px){
     header#header .container {justify-content: flex-end;}
@@ -170,11 +172,14 @@
     footer#footer .list-menu-footer .row>.col-md-4:nth-child(2) {padding-right: 15px;}
 }
 @media (max-width: 320px){
-    .box-menu .item-menu h4 {font-size: 12px;}
-    .box-menu .item-menu .content-menu p { font-size: 11px;}
-    .box-menu .item-menu .img-menu img {width: 100%;height: auto;}
-    .box-search-header .wrap-input-search.list-search-header a{margin-top: 0;}
+    .box-menu .item-menu h4 {font-size: 10px; min-height: 20px;}
+    .box-menu .item-menu {padding-left: 3px;padding-right: 3px; padding-bottom: 5px;}
+    .box-menu .item-menu .content-menu p { font-size: 9px;}
+    .box-search-header .wrap-input-search.list-search-header a{margin-top: 0; display: none;}
     .box-search-header .wrap-input-search.list-search-header a:nth-child(odd){margin-left: 0;}
+    .box-search-header .wrap-input-search.list-search-header a:first-child,
+    .box-search-header .wrap-input-search.list-search-header a:nth-child(2){display: block;}
+    .box-menu.wrap-flex .item-menu {padding: 18px 15px;}
 }
 @media (max-width: 280px){
     footer#footer .list-menu-footer {padding-left: 5px;padding-right: 5px;}
